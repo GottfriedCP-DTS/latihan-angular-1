@@ -1,9 +1,9 @@
-<h2>Daftar Smartphone</h2>
+<h2>Daftar Buku</h2>
 
-<div *ngFor="let barang of katProduk">
-	<h3>{{ barang.nama }}</h3>
-	<p>$ {{ barang.harga }}</p>
-	<p *ngIf="barang.deskripsi">{{ barang.deskripsi }}</p>
+<div *ngFor="let barang of katBuku">
+	<h3>{{ barang.judul }}</h3>
+	<p>Rp {{ barang.harga }}</p>
+	<p *ngIf="barang.sinopsis">{{ barang.sinopsis }}</p>
 
 	<button class="tombol" (click)="keranjang()">Beli</button>
 	<button mat-raised-button>Cart</button><button mat-icon-button>
