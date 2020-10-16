@@ -1,0 +1,18 @@
+p {
+  font-family: Lato;
+}
+
+nav a:link,
+nav a:visited {
+  background-color: lightgreen;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+nav a:hover,
+nav a:active {
+  background-color: #111;
+}

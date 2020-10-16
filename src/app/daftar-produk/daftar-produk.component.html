@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+	<h2>Daftar produk</h2>
+</mat-toolbar>
+
+<div *ngFor="let barang of katProduk">
+	<h3>{{ barang.nama }}</h3>
+	<p>$ {{ barang.harga }}</p>
+	<p *ngIf="barang.deskripsi">{{ barang.deskripsi }}</p>
+
+	<button class="tombol" (click)="keranjang()">Beli</button>
+	<button mat-raised-button>Cart</button><button mat-icon-button>
+    <mat-icon aria-label="Heart">favorite</mat-icon>
+  </button>
+</div>
